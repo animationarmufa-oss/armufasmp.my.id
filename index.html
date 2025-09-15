@@ -3,202 +3,254 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ARMUFA SMP SEASON 1</title>
+  <title>ARMUFA SMP Season 1</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #111;
-      color: #eee;
       margin: 0;
-      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: #111;
+      color: #fff;
     }
-    header {
+
+    h1 {
       text-align: center;
-      padding: 20px;
-      background: #000;
-      border-bottom: 2px solid #f00;
+      color: red;
+      margin-top: 20px;
+      font-size: 28px;
     }
-    header h1 {
-      font-size: 48px;
-      color: #ff3300;
-      margin: 0;
-      line-height: 1.2;
-      text-shadow: 0 0 8px #ff0000;
+
+    h2 {
+      text-align: center;
+      color: red;
+      margin: 5px 0 15px;
+      font-size: 22px;
     }
-    header .subtitle {
-      font-size: 18px;
-      color: #bbb;
-      margin-top: 8px;
+
+    p {
+      line-height: 1.6;
+      font-size: 16px;
     }
+
+    /* MENU */
     nav {
       display: flex;
-      justify-content: center;
-      background: #1a1a1a;
-      border-bottom: 2px solid #f00;
-      flex-wrap: wrap;
+      overflow-x: auto;
+      white-space: nowrap;
+      background: #000;
+      border-bottom: 2px solid red;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
+
     nav a {
-      padding: 12px 18px;
-      text-decoration: none;
+      flex: 0 0 auto;
       color: #fff;
+      text-decoration: none;
+      font-size: 15px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    nav a.active {
+      background: red;
+      color: #fff;
+    }
+
+    section {
+      padding: 22px 18px;
+      border-bottom: 2px solid red;
+    }
+
+    section h3 {
+      color: gold;
+      margin-bottom: 10px;
+      font-size: 19px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 16px;
+      background: red;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 15px;
       font-weight: bold;
       transition: 0.3s;
     }
-    nav a:hover {
-      background: #ff3300;
-      color: #000;
-    }
-    section {
-      padding: 20px;
-      border-bottom: 2px solid #f00;
-    }
-    section h2 {
-      color: #ffcc00;
-      margin-bottom: 10px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 8px 5px;
-      background: #ff3300;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      cursor: pointer;
-      border: none;
-      box-shadow: 0 0 8px #ff0000;
-    }
+
     .btn:hover {
-      background: #ff6600;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #000;
-      color: #666;
-      font-size: 14px;
-      border-top: 2px solid #f00;
+      background: darkred;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>
-      ARMUFA SMP <br>
-      <span style="font-size:36px;">SEASON 1</span>
-    </h1>
-    <div class="subtitle">Economy & RPG Minecraft Server</div>
-  </header>
 
+  <h1>ARMUFA SMP</h1>
+  <h2>SEASON 1</h2>
+  <p style="text-align:center;font-size:15px;">Economy & RPG Minecraft Server</p>
+
+  <!-- MENU -->
   <nav>
     <a href="#deskripsi">📜 Deskripsi</a>
     <a href="#aturan">📖 Aturan</a>
     <a href="#fitur">⚡ Fitur</a>
-    <a href="#ip">🌍 IP & Port</a>
+    <a href="#ipport">🌍 IP & Port</a>
     <a href="#owner">👑 Owner/Admin</a>
-    <a href="#join">💬 Grup</a>
-    <a href="#topup">🪙 Top Up</a>
+    <a href="#grup">💬 Grup</a>
+    <a href="#topup">💰 Top Up</a>
   </nav>
 
+  <!-- SECTION DESKRIPSI -->
   <section id="deskripsi">
-    <h2>📜 Deskripsi</h2>
-    <p><b>Assalamualaikum warahmatullahi wabarakatuh,</b></p>
-    <p>Kalian bosen main server murni yang itu-itu aja?  
-    Yuk cobain <b>ARMUFA SMP INDONESIA [SEASON 1]</b>! 🎉</p>
-    <p>Di sini kalian bebas menjelajah: mining, bikin rumah, parkour, PvP, dungeon, dan masih banyak lagi.  
-    Plus ada <b>senjata legendaris</b> yang cuma bisa didapat lewat <b>fitur gacha</b>. Dijamin seru abis! 🔥</p>
+    <h3>📜 Deskripsi</h3>
+    <p>
+      Assalamualaikum warahmatullahi wabarakatuh,<br><br>
+      Kalian bosan main server murni yang itu-itu aja?  
+      Yuk gabung ke <b>ARMUFA SMP INDONESIA [SEASON 1]</b> 🎉<br><br>
+      🌍 Server ini hadir dengan konsep <b>Economy & RPG</b>.  
+      Kalian bisa mining, bikin rumah, farming, dungeon, parkour, PvP, hingga ikut event gacha untuk mendapatkan <b>senjata legendaris</b>.  
+      Semua aktivitas dijamin bikin seru & nagih 🔥.
+    </p>
   </section>
 
+  <!-- SECTION ATURAN -->
   <section id="aturan">
-    <h2>📖 Aturan Server</h2>
-    <ul>
-      <li>🚫 Dilarang menggunakan cheat termasuk X-Ray</li>
-      <li>🚫 Jangan toxic / menghina player lain</li>
-      <li>💱 Tidak boleh menjual item langka, rumah, atau uang game ke sembarang orang</li>
-      <li>⚠️ Jika ada bug atau masalah player, segera lapor ke Owner/Admin</li>
-    </ul>
+    <h3>📖 Aturan Server</h3>
+    <p>
+      ⚙️ <b>ATURAN WAJIB</b><br><br>
+      1. 🚫 Dilarang menggunakan cheat termasuk x-ray.<br>
+      2. 🚫 Tidak boleh toxic atau menghina player lain.<br>
+      3. 🚫 Tidak boleh menjual item langka, rumah, atau uang game ke semua orang.<br>
+      4. ✅ Hormati semua player & admin.<br>
+      5. ✅ Jika ada bug/kesalahan player, langsung PM ke Owner/Admin.<br><br>
+      Pelanggaran bisa kena <b>ban sementara/permanen</b>.
+    </p>
   </section>
 
+  <!-- SECTION FITUR -->
   <section id="fitur">
-    <h2>⚡ Spesial Fitur</h2>
-    <ul>
-      <li>🏠 Lobby System</li>
-      <li>🎲 Gacha</li>
-      <li>📍 Claim Land</li>
-      <li>⚔️ Senjata Legendaris</li>
-      <li>🔥 PvP</li>
-      <li>🏃 Parkour</li>
-      <li>🕹️ Dungeons</li>
-    </ul>
+    <h3>⚡ Fitur Unggulan</h3>
+    <p>
+      - Lobby interaktif<br>
+      - Sistem economy & jual-beli<br>
+      - Gacha senjata legendaris<br>
+      - Claim land (lindungi rumahmu)<br>
+      - PvP arena seru<br>
+      - Parkour challenge<br>
+      - Dungeon & quest unik<br>
+    </p>
   </section>
 
-  <section id="ip">
-    <h2>🌍 IP & Port</h2>
-    <p><b>IP:</b> play.armufasmp.my.id</p>
-    <p><b>Port:</b> 19132</p>
-    <button class="btn" onclick="copyText('play.armufasmp.my.id')">Salin IP</button>
-    <button class="btn" onclick="copyText('19132')">Salin Port</button>
-    <p><i>Khusus server: Bedrock (PC/Android/iOS) & Java (PC/Pojav)</i></p>
+  <!-- SECTION IP -->
+  <section id="ipport">
+    <h3>🌍 IP & Port</h3>
+    <p>
+      <b>IP:</b> play.armufasmp.my.id<br>
+      <b>Port:</b> 19132<br><br>
+      📌 <i>Khusus server:</i><br>
+      - Bedrock (Android/iOS/PC)<br>
+      - Java (PC / PojavLauncher)
+    </p>
+    <a class="btn" onclick="copyText('play.armufasmp.my.id')">📋 Salin IP</a>
+    <a class="btn" onclick="copyText('19132')">📋 Salin Port</a>
   </section>
 
+  <!-- SECTION OWNER -->
   <section id="owner">
-    <h2>👑 Owner & Admin</h2>
-    <p><b>OWNER:</b></p>
-    <ul>
-      <li>🌟 Arya (ARMUFA)</li>
-    </ul>
-    <p><b>KETUA ADMIN:</b></p>
-    <ul>
-      <li>🛡️ Gery (Sirr Arthur)</li>
-    </ul>
-    <p><b>ADMIN LAINNYA:</b></p>
-    <ul>
-      <li>⚔️ Ezza (Riski)</li>
-      <li>⚔️ Nagata (Zecroomcraft)</li>
-      <li>⚔️ Fajri (jrfaii)</li>
-      <li>⚔️ Keiya (KeiyaSanch)</li>
-    </ul>
+    <h3>👑 Owner & Admin</h3>
+    <p>
+      <b>OWNER:</b><br>
+      🌟 [OWNER] Arya (ARMUFA)<br><br>
+
+      <b>KETUA ADMIN:</b><br>
+      - Gery (Sirr Arthur)<br><br>
+
+      <b>ADMIN LAINNYA:</b><br>
+      - Ezza (Riski)<br>
+      - Nagata (Zecroomcraft)<br>
+      - Fajri (jrfaii)<br>
+      - Keiya (KeiyaSanch)<br>
+    </p>
   </section>
 
-  <section id="join">
-    <h2>💬 Join Grup</h2>
-    <p>Untuk update terbaru & komunitas, join grup di sini:</p>
-    <a class="btn" href="https://linkbio.co/armufasmp" target="_blank">Join Grup WhatsApp</a>
+  <!-- SECTION GRUP -->
+  <section id="grup">
+    <h3>💬 Grup Server</h3>
+    <p>
+      Gabung ke grup WhatsApp server untuk info & event terbaru:<br>
+      <a class="btn" href="https://linkbio.co/armufasmp" target="_blank">➡️ Join Grup</a>
+    </p>
   </section>
 
+  <!-- SECTION TOP UP -->
   <section id="topup">
-    <h2>🪙 Top Up</h2>
-    <p><b>Harga Coin:</b></p>
-    <ul>
-      <li>1000 = 5K</li>
-      <li>2000 = 10K</li>
-      <li>4000 = 20K</li>
-      <li>8000 = 40K</li>
-      <li>10000 = 50K</li>
-      <li>20000 = 100K</li>
-    </ul>
-    <p><b>Rank Up:</b></p>
-    <ul>
-      <li>VIP = 5K / 1 bulan</li>
-      <li>MVP = 20K / 1 bulan</li>
-      <li>Rich = 50K / 1 bulan</li>
-      <li>Super Rich = 100K / 1 bulan</li>
-      <li>Supreme = 150K / 1 bulan</li>
-    </ul>
-    <p>💸 Untuk Top Up hubungi [OWNER] ARMUFA SMP lewat WhatsApp:</p>
-    <a class="btn" href="https://wa.me/6283837297362" target="_blank">Top Up Sekarang</a>
+    <h3>💰 Top Up</h3>
+    <p>
+      🪙 <b>HARGA COIN</b><br>
+      - 1000 = 5K<br>
+      - 2000 = 10K<br>
+      - 4000 = 20K<br>
+      - 8000 = 40K<br>
+      - 10000 = 50K<br>
+      - 20000 = 100K<br><br>
+
+      <b>RANK UP</b><br>
+      - VIP = 5K / bulan<br>
+      - MVP = 20K / bulan<br>
+      - Rich = 50K / bulan<br>
+      - Super Rich = 100K / bulan<br>
+      - Supreme = 150K / bulan<br><br>
+
+      Untuk Top Up hubungi <b>[OWNER] ARMUFA SMP</b> via WhatsApp:<br>
+      <a class="btn" href="https://wa.me/6283837297362" target="_blank">💰 Top Up Sekarang</a>
+    </p>
   </section>
 
-  <footer>
-    © 2025 ARMUFA SMP Indonesia - Season 1
-  </footer>
-
+  <!-- SCRIPT -->
   <script>
-    function copyText(text) {
-      navigator.clipboard.writeText(text).then(() => {
-        alert(text + " berhasil disalin!");
+    // Smooth scroll
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
       });
+    });
+
+    // Scroll spy
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 80;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("active");
+        }
+      });
+    });
+
+    // Copy function
+    function copyText(text) {
+      navigator.clipboard.writeText(text);
+      alert("Disalin: " + text);
     }
   </script>
 </body>
