@@ -1,128 +1,238 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ARMUFA SMP SEASON 1</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #0d0d0d;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      text-align: center;
-      padding: 20px;
-    }
-    header img {
-      width: 150px;
-      margin-bottom: 15px;
-    }
-    h1 {
-      color: #ff4500;
-      margin: 0;
-    }
-    .section {
-      background: #1a1a1a;
-      margin: 15px;
-      padding: 15px;
-      border-radius: 10px;
-      border: 2px solid #ff4500;
-    }
-    .section h2 {
-      color: #ff4500;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .btn {
-      display: inline-block;
-      background: #ff4500;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background: #e63e00;
-    }
-    .center {
-      text-align: center;
-      margin: 20px 0;
-    }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>ARMUFA SMP SEASON 1</title>
+<style>
+  :root{
+    --bg: #000;
+    --card: #111;
+    --accent: #ff4500;
+    --accent-2: #ffcc00;
+    --muted: #aaa;
+  }
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:var(--bg);
+    color:#fff;
+    line-height:1.6;
+  }
+
+  header{
+    text-align:center;
+    padding:28px 16px 8px;
+  }
+  header h1{
+    color:var(--accent);
+    margin:0 0 6px;
+    font-size:28px;
+    letter-spacing:1px;
+  }
+  header p{ margin:0; color:var(--muted); }
+
+  /* Menu vertikal */
+  nav{
+    background:#1a1a1a;
+    border-bottom:3px solid var(--accent);
+  }
+  nav a{
+    display:block;
+    color:#fff;
+    padding:12px 16px;
+    text-decoration:none;
+    font-weight:700;
+    border-bottom:1px solid #2a2a2a;
+  }
+  nav a:hover{
+    background:var(--accent);
+    color:#fff;
+  }
+
+  .container{
+    padding:14px;
+  }
+  section.card{
+    background:var(--card);
+    border:2px solid var(--accent);
+    border-radius:10px;
+    padding:16px;
+    margin:12px 0;
+  }
+  section.card h2{
+    margin-top:0;
+    color:var(--accent-2);
+  }
+  ul{ padding-left:20px; margin:8px 0; }
+  .muted{ color:var(--muted); font-size:14px; }
+
+  .btn{
+    display:inline-block;
+    background:var(--accent);
+    color:#fff;
+    padding:10px 14px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:700;
+    cursor:pointer;
+    border:none;
+  }
+  .btn:hover{ background:#e63e00; }
+  .center{ text-align:center; margin-top:12px; }
+
+  @media (max-width:420px){
+    header h1{ font-size:22px; }
+    nav a{ padding:10px 12px; }
+  }
+</style>
 </head>
 <body>
+
   <header>
-    <img src="armufa-logo.png" alt="ARMUFA SMP Logo">
     <h1>ARMUFA SMP SEASON 1</h1>
     <p>Economy & RPG Minecraft Server</p>
   </header>
 
-  <div class="section">
-    <h2>📜 Deskripsi</h2>
-    <p>
-      Assalamualaikum warahmatullahi, kalian bosen main server murni itu aja?  
-      Kalian bisa main server kami yaitu:
-    </p>
-    <p><b>ARMUFA SMP INDONESIA [SEASON 1]</b></p>
-    <p>
-      Selamat datang di server ARMUFA SMP INDONESIA! Disini kalian bebas jelajahi seperti mining, bangun rumah, parkour, PvP, semua pasti ada.  
-      Ada juga senjata legendaris yang hanya bisa didapatkan lewat akses gacha. Seru banget kalau main di server ini!
-    </p>
+  <nav>
+    <a href="#deskripsi">Deskripsi</a>
+    <a href="#aturan">Aturan Server</a>
+    <a href="#fitur">Spesial Keunggulan</a>
+    <a href="#ipport">IP &amp; Port</a>
+    <a href="#owner">Owner &amp; Admin</a>
+    <a href="#grup">Join Grup</a>
+    <a href="#topup">Top Up</a>
+  </nav>
+
+  <div class="container">
+
+    <!-- Deskripsi -->
+    <section id="deskripsi" class="card">
+      <h2>📜 Deskripsi</h2>
+      <p class="muted">Assalamualaikum warahmatullahi wabarakatuh</p>
+      <p><strong>ARMUFA SMP INDONESIA [SEASON 1]</strong></p>
+      <p>
+        Selamat datang di server ARMUFA SMP INDONESIA! Kalian yang bosan main server murni bisa cobain server kami.
+        Di sini kalian bebas menjelajahi dunia: <strong>mining, bangun rumah, parkour, PvP</strong> — semua tersedia.
+        Selain itu ada sistem <strong>Economy &amp; RPG</strong>, fitur <strong>Gacha</strong> untuk dapatkan <em>senjata legendaris</em>,
+        claim land, dungeon, event, dan banyak lagi — seru banget untuk dimainkan bersama teman!
+      </p>
+    </section>
+
+    <!-- Aturan -->
+    <section id="aturan" class="card">
+      <h2>⚙️ ATURAN SERVER</h2>
+      <ul>
+        <li>Dilarang menggunakan cheat termasuk X-Ray.</li>
+        <li>Dilarang toxic atau menghina pemain lain.</li>
+        <li>Tidak boleh menjual item langka, rumah, uang game keluar server.</li>
+        <li>Jika menemukan bug, segera lapor ke Owner/Admin.</li>
+      </ul>
+    </section>
+
+    <!-- Fitur -->
+    <section id="fitur" class="card">
+      <h2>🌟 SPESIAL KEUNGGULAN</h2>
+      <ul>
+        <li>Lobby interaktif</li>
+        <li>Sistem Gacha senjata legendaris</li>
+        <li>Claim Land</li>
+        <li>PvP &amp; Parkour</li>
+        <li>Dungeons &amp; Event</li>
+      </ul>
+    </section>
+
+    <!-- IP & Port -->
+    <section id="ipport" class="card">
+      <h2>🎮 IP &amp; PORT</h2>
+      <p><strong>IP:</strong> <span id="server-ip">play.armufasmp.my.id</span></p>
+      <p><strong>Port:</strong> <span id="server-port">19132</span></p>
+
+      <div class="center" style="margin-top:10px;">
+        <button class="btn" onclick="copyText('play.armufasmp.my.id')">📋 Copy IP</button>
+        <button class="btn" onclick="copyText('19132')">📋 Copy Port</button>
+        <button class="btn" onclick="copyText('play.armufasmp.my.id:19132')">📋 Salin Semua</button>
+      </div>
+    </section>
+
+    <!-- Owner -->
+    <section id="owner" class="card">
+      <h2>👑 OWNER &amp; ADMIN</h2>
+      <p><strong>OWNER:</strong> Arya (ARMUFA)</p>
+      <p><strong>KETUA ADMIN:</strong> Gery (Sirr Arthur)</p>
+      <p><strong>ADMIN:</strong></p>
+      <ul>
+        <li>Ezza (Riski)</li>
+        <li>Nagata (Zecroomcraft)</li>
+        <li>Fajri (jrfaii)</li>
+        <li>Keiya (KeiyaSanch)</li>
+      </ul>
+    </section>
+
+    <!-- Grup -->
+    <section id="grup" class="card">
+      <h2>📱 JOIN GRUP</h2>
+      <div class="center">
+        <a class="btn" href="https://linkbio.co/armufasmp" target="_blank">📲 Join Grup WhatsApp</a>
+      </div>
+    </section>
+
+    <!-- Top Up -->
+    <section id="topup" class="card">
+      <h2>🪙 TOP UP SERVER 🪙</h2>
+      <h3>Harga Coin</h3>
+      <ul>
+        <li>1000 = 5K</li>
+        <li>2000 = 10K</li>
+        <li>4000 = 20K</li>
+        <li>8000 = 40K</li>
+        <li>10000 = 50K</li>
+        <li>20000 = 100K</li>
+      </ul>
+      <h3>Rank Up</h3>
+      <ul>
+        <li>VIP = 5K / bulan</li>
+        <li>MVP = 20K / bulan</li>
+        <li>Rich = 50K / bulan</li>
+        <li>Super Rich = 100K / bulan</li>
+        <li>Supreme = 150K / bulan</li>
+      </ul>
+      <p class="muted">Untuk Top Up hubungi langsung Owner ARMUFA SMP melalui WhatsApp.</p>
+      <div class="center">
+        <a class="btn" href="https://wa.me/6283837297362" target="_blank">💰 Top Up Sekarang</a>
+      </div>
+    </section>
+
   </div>
 
-  <div class="section">
-    <h2>⚙️ Aturan Server</h2>
-    <ul>
-      <li>Dilarang menggunakan cheat termasuk x-ray</li>
-      <li>Dilarang toxic</li>
-      <li>Tidak boleh menjual item langka, rumah, atau uang game</li>
-      <li>Jika ada bug/kesalahan player, segera PM owner</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>🌟 Spesial Keunggulan Server</h2>
-    <ul>
-      <li>Fitur Lobby</li>
-      <li>Fitur Gacha</li>
-      <li>Claim Land</li>
-      <li>Senjata Legendaris</li>
-      <li>PvP</li>
-      <li>Parkour</li>
-      <li>Dungeons</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>🎮 IP & Port Server</h2>
-    <p><b>IP:</b> play.armufasmp.my.id</p>
-    <p><b>Port:</b> 19132</p>
-  </div>
-
-  <div class="section">
-    <h2>👑 Owner & Admin</h2>
-    <p><b>Owner:</b> 🌟 Arya (ARMUFA)</p>
-    <p><b>Ketua Admin:</b> Gery (Sirr Arthur)</p>
-    <p><b>Admin Lainnya:</b></p>
-    <ul>
-      <li>Ezza (Riski)</li>
-      <li>Nagata (Zecroomcraft)</li>
-      <li>Fajri (jrfaii)</li>
-      <li>Keiya (KeiyaSanch)</li>
-    </ul>
-  </div>
-
-  <div class="center">
-    <a href="https://linkbio.co/armufasmp" target="_blank" class="btn">📲 Join Grup WA Server</a>
-  </div>
+<script>
+  function copyText(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function(){
+        alert('✅ Tersalin: ' + text);
+      }).catch(function(){
+        fallbackCopy(text);
+      });
+    } else {
+      fallbackCopy(text);
+    }
+  }
+  function fallbackCopy(text) {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.left = '-9999px';
+    document.body.appendChild(ta);
+    ta.select();
+    try {
+      document.execCommand('copy');
+      alert('✅ Tersalin: ' + text);
+    } catch(e){
+      alert('❌ Gagal menyalin. Silakan salin manual: ' + text);
+    }
+    document.body.removeChild(ta);
+  }
+</script>
 </body>
-  </html>
+</html>
