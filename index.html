@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
+<!DOCTYPE html><html lang="id"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ARMUFA SMP Season 1</title>
@@ -11,93 +9,95 @@
       background: #111;
       color: #fff;
     }
-
     h1 {
       text-align: center;
       color: red;
       margin-top: 20px;
       font-size: 28px;
-    }
+    }h2 {
+  text-align: center;
+  color: red;
+  margin: 5px 0 15px;
+  font-size: 22px;
+}
 
-    h2 {
-      text-align: center;
-      color: red;
-      margin: 5px 0 15px;
-      font-size: 22px;
-    }
+p {
+  line-height: 1.6;
+  font-size: 16px;
+}
 
-    p {
-      line-height: 1.6;
-      font-size: 16px;
-    }
+/* MENU */
+nav {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  background: #000;
+  border-bottom: 2px solid red;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-    /* MENU */
-    nav {
-      display: flex;
-      overflow-x: auto;
-      white-space: nowrap;
-      background: #000;
-      border-bottom: 2px solid red;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+nav a {
+  flex: 0 0 auto;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
 
-    nav a {
-      flex: 0 0 auto;
-      color: #fff;
-      text-decoration: none;
-      font-size: 15px;
-      padding: 12px 16px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      border-radius: 4px;
-      transition: 0.3s;
-    }
+nav a.active {
+  background: red;
+  color: #fff;
+}
 
-    nav a.active {
-      background: red;
-      color: #fff;
-    }
+section {
+  padding: 22px 18px;
+  border-bottom: 2px solid red;
+}
 
-    section {
-      padding: 22px 18px;
-      border-bottom: 2px solid red;
-    }
+section h3 {
+  color: gold;
+  margin-bottom: 10px;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
-    section h3 {
-      color: gold;
-      margin-bottom: 10px;
-      font-size: 19px;
-    }
+.btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 12px 16px;
+  background: red;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
 
-    .btn {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 12px 16px;
-      background: red;
-      color: #fff;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
+.btn:hover {
+  background: darkred;
+}
 
-    .btn:hover {
-      background: darkred;
-    }
+.sticker {
+  width: 26px;
+  height: 26px;
+}
+
   </style>
 </head>
 <body>
-
   <h1>ARMUFA SMP</h1>
   <h2>SEASON 1</h2>
-  <p style="text-align:center;font-size:15px;">Economy & RPG Minecraft Server</p>
-
-  <!-- MENU -->
-  <nav>
+  <p style="text-align:center;font-size:15px;">Economy & RPG Minecraft Server</p>  <!-- MENU -->  <nav>
     <a href="#deskripsi">📜 Deskripsi</a>
     <a href="#aturan">📖 Aturan</a>
     <a href="#fitur">⚡ Fitur</a>
@@ -105,11 +105,8 @@
     <a href="#owner">👑 Owner/Admin</a>
     <a href="#grup">💬 Grup</a>
     <a href="#topup">💰 Top Up</a>
-  </nav>
-
-  <!-- SECTION DESKRIPSI -->
-  <section id="deskripsi">
-    <h3>📜 Deskripsi</h3>
+  </nav>  <!-- SECTION DESKRIPSI -->  <section id="deskripsi">
+    <h3><img src="https://img.icons8.com/fluency/48/scroll.png" class="sticker"/> Deskripsi</h3>
     <p>
       Assalamualaikum warahmatullahi wabarakatuh,<br><br>
       Kalian bosan main server murni yang itu-itu aja?  
@@ -118,11 +115,8 @@
       Kalian bisa mining, bikin rumah, farming, dungeon, parkour, PvP, hingga ikut event gacha untuk mendapatkan <b>senjata legendaris</b>.  
       Semua aktivitas dijamin bikin seru & nagih 🔥.
     </p>
-  </section>
-
-  <!-- SECTION ATURAN -->
-  <section id="aturan">
-    <h3>📖 Aturan Server</h3>
+  </section>  <!-- SECTION ATURAN -->  <section id="aturan">
+    <h3><img src="https://img.icons8.com/color/48/rules.png" class="sticker"/> Aturan Server</h3>
     <p>
       ⚙️ <b>ATURAN WAJIB</b><br><br>
       1. 🚫 Dilarang menggunakan cheat termasuk x-ray.<br>
@@ -132,24 +126,18 @@
       5. ✅ Jika ada bug/kesalahan player, langsung PM ke Owner/Admin.<br><br>
       Pelanggaran bisa kena <b>ban sementara/permanen</b>.
     </p>
-  </section>
-
-  <!-- SECTION FITUR -->
-  <section id="fitur">
-    <h3>⚡ Fitur Unggulan</h3>
+  </section>  <!-- SECTION FITUR -->  <section id="fitur">
+    <h3><img src="https://img.icons8.com/color/48/flash-on.png" class="sticker"/> Fitur Unggulan</h3>
     <p>
-      - Lobby interaktif<br>
-      - Sistem economy & jual-beli<br>
-      - Gacha senjata legendaris<br>
-      - Claim land (lindungi rumahmu)<br>
-      - PvP arena seru<br>
-      - Parkour challenge<br>
-      - Dungeon & quest unik<br>
+      <img src="https://img.icons8.com/color/48/home.png" class="sticker"/> Lobby interaktif<br>
+      <img src="https://img.icons8.com/color/48/money-bag.png" class="sticker"/> Sistem economy & jual-beli<br>
+      <img src="https://img.icons8.com/color/48/treasure-chest.png" class="sticker"/> Gacha senjata legendaris<br>
+      <img src="https://img.icons8.com/color/48/lock-2.png" class="sticker"/> Claim land (lindungi rumahmu)<br>
+      <img src="https://img.icons8.com/color/48/arena.png" class="sticker"/> PvP arena seru<br>
+      <img src="https://img.icons8.com/color/48/ladder.png" class="sticker"/> Parkour challenge<br>
+      <img src="https://img.icons8.com/color/48/quest.png" class="sticker"/> Dungeon & quest unik<br>
     </p>
-  </section>
-
-  <!-- SECTION IP -->
-  <section id="ipport">
+  </section>  <!-- SECTION IP -->  <section id="ipport">
     <h3>🌍 IP & Port</h3>
     <p>
       <b>IP:</b> play.armufasmp.my.id<br>
@@ -158,39 +146,41 @@
       - Bedrock (Android/iOS/PC)<br>
       - Java (PC / PojavLauncher)
     </p>
+    <!-- Tombol salin -->
     <a class="btn" onclick="copyText('play.armufasmp.my.id')">📋 Salin IP</a>
     <a class="btn" onclick="copyText('19132')">📋 Salin Port</a>
-  </section>
+    <br><br><!-- Tombol langsung join -->
+<a class="btn" href="minecraft://?addExternalServer=ARMUFA SMP|play.armufasmp.my.id:19132">
+  🚀 Main Bedrock
+</a>
+<a class="btn" href="minecraft://?addServer=ARMUFA SMP|play.armufasmp.my.id:25565">
+  💻 Main Java
+</a>
 
-  <!-- SECTION OWNER -->
-  <section id="owner">
-    <h3>👑 Owner & Admin</h3>
+  </section>  <!-- SECTION OWNER -->  <section id="owner">
+    <h3><img src="https://img.icons8.com/color/48/administrator-male.png" class="sticker"/> Owner & Admin</h3>
     <p>
       <b>OWNER:</b><br>
-      🌟 [OWNER] Arya (ARMUFA)<br><br>
+      👑 Arya (ARMUFA)<br><br><b>KETUA ADMIN:</b><br>
+  🛡️ Gery (Sirr Arthur)<br><br>
 
-      <b>KETUA ADMIN:</b><br>
-      - Gery (Sirr Arthur)<br><br>
+  <b>ADMIN LAINNYA:</b><br>
+  🗡️ Azril (RillTo2012)<br>
+  🗡️ Ezza (Riski)<br>
+  🗡️ Nagata (Zecroomcraft)<br>
+  🗡️ Fajri (jrfaii)<br>
+  <!-- Admin tambahan -->
+  🗡️ Keiya (KeiyaSanch)<br>
+  🗡️ Azel (FoxxN)<br>
+</p>
 
-      <b>ADMIN LAINNYA:</b><br>
-      - Ezza (Riski)<br>
-      - Nagata (Zecroomcraft)<br>
-      - Fajri (jrfaii)<br>
-      - Keiya (KeiyaSanch)<br>
-    </p>
-  </section>
-
-  <!-- SECTION GRUP -->
-  <section id="grup">
+  </section>  <!-- SECTION GRUP -->  <section id="grup">
     <h3>💬 Grup Server</h3>
     <p>
       Gabung ke grup WhatsApp server untuk info & event terbaru:<br>
       <a class="btn" href="https://linkbio.co/armufasmp" target="_blank">➡️ Join Grup</a>
     </p>
-  </section>
-
-  <!-- SECTION TOP UP -->
-  <section id="topup">
+  </section>  <!-- SECTION TOP UP -->  <section id="topup">
     <h3>💰 Top Up</h3>
     <p>
       🪙 <b>HARGA COIN</b><br>
@@ -200,21 +190,16 @@
       - 8000 = 40K<br>
       - 10000 = 50K<br>
       - 20000 = 100K<br><br>
-
       <b>RANK UP</b><br>
       - VIP = 5K / bulan<br>
       - MVP = 20K / bulan<br>
       - Rich = 50K / bulan<br>
       - Super Rich = 100K / bulan<br>
-      - Supreme = 150K / bulan<br><br>
+      - Supreme = 150K / bulan<br><br>Untuk Top Up hubungi <b>[OWNER] ARMUFA SMP</b> via WhatsApp:<br>
+  <a class="btn" href="https://wa.me/6283837297362" target="_blank">💰 Top Up Sekarang</a>
+</p>
 
-      Untuk Top Up hubungi <b>[OWNER] ARMUFA SMP</b> via WhatsApp:<br>
-      <a class="btn" href="https://wa.me/6283837297362" target="_blank">💰 Top Up Sekarang</a>
-    </p>
-  </section>
-
-  <!-- SCRIPT -->
-  <script>
+  </section>  <!-- SCRIPT -->  <script>
     // Smooth scroll
     document.querySelectorAll('nav a').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
@@ -252,6 +237,5 @@
       navigator.clipboard.writeText(text);
       alert("Disalin: " + text);
     }
-  </script>
-</body>
+  </script></body>
 </html>
